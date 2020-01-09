@@ -1,4 +1,4 @@
-variable "transit_gateway_id" {
+variable "destination_cidr" {
   type = string
 }
 
@@ -6,6 +6,6 @@ variable "route_tables" {
   type = list(string)
 }
 
-variable "destination_cidr" {
-  type    = string
+variable "transit_gateway_id" {
+  type = string
 }
