@@ -15,13 +15,28 @@ module "awsvpn_tgw_route_cidr" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| aws | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| destination\_cidr | CIDR for route | string | n/a | yes |
-| route\_tables | Route talbes to install route in | list(string) | n/a | yes |
-| transit\_gateway\_id | Transit Gateway ID | string | n/a | yes |
+|------|-------------|------|---------|:--------:|
+| destination\_cidr | CIDR for route | `string` | n/a | yes |
+| route\_table\_count | number of route tables that will be created | `number` | `null` | no |
+| route\_tables | Route talbes to install route in | `list(string)` | n/a | yes |
+| transit\_gateway\_id | Transit Gateway ID | `string` | n/a | yes |
+
+## Outputs
+
+No output.
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
