@@ -8,6 +8,12 @@ variable "route_tables" {
   type        = list(string)
 }
 
+variable "route_table_count" {
+  default     = null
+  description = "number of route tables that will be created"
+  type        = number
+}
+
 variable "transit_gateway_id" {
   description = "Transit Gateway ID"
   type        = string
